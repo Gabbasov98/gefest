@@ -1,0 +1,63 @@
+.simulate__sidebar .product-card:hover:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: calc(100% + 1.25em);
+  height: calc(100% + 1.25em);
+  border: 1px dashed #c40e38;
+  border-radius: 0.625em;
+  pointer-events: none;
+}
+
+.simulate {
+  max-height: initial;
+  display: flex;
+  height: 800px;
+}
+
+.simulate__grid {
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+}
+
+.simulate:before {
+  pointer-events: none;
+  width: calc(100% - 1084px);
+}
+
+.simulate__sidebar {
+  max-height: initial;
+}
+
+.simulate__area {
+  width: 1084px;
+  z-index: 10;
+  flex: none;
+}
+
+.simulate__img {
+  height: 100%;
+}
+
+.simulate__canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.simulate__nav {
+  z-index: 10;
+}
+
+.interactive-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+}
+
+[data-hide='true'] {
+  display: none !important;
+}

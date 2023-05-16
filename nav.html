@@ -1,4 +1,5 @@
-<!DOCTYPE html> <html lang="ru">
+<!DOCTYPE html>
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +30,50 @@
 <body class="page">
 
     <div class="wrapper" style="padding: 50px;">
+        <a href="lk.html" style="display: block; margin-bottom: 20px;">
+            Личный кабинет
+        </a>
+        <a href="personal-data.html" style="display: block; margin-bottom: 20px;">
+            Личные данные
+        </a>
+        <a href="favourite.html" style="display: block; margin-bottom: 20px;">
+            Избранное
+        </a>
+        <a href="messages.html" style="display: block; margin-bottom: 20px;">
+            Сообщения и уведомления
+        </a>
+        <a href="message-item.html" style="display: block; margin-bottom: 20px;">
+            Сообщения и уведомления 2
+        </a>
+        <a href="support.html" style="display: block; margin-bottom: 20px;">
+            Центр поддержки
+        </a>
+        <a href="materials.html" style="display: block; margin-bottom: 20px;">
+            Рекламные материалы
+        </a>
+        <a href="review.html" style="display: block; margin-bottom: 20px;">
+            Написать отзыв
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация продукции
+        </a>
+        <a href="questionare.html" style="display: block; margin-bottom: 20px;">
+            ПРОЙТИ ОПРОС
+        </a>
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="loginModal">
+            Личный кабинет
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="reviewModal">
+            Отзыв о товаре
+        </button>
+
+        <hr style="display: block; margin: 50px 0;">
+
+
+
+
+
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
@@ -71,9 +116,6 @@
         <a href="about.html" style="display: block; margin-bottom: 20px;">
             О нас
         </a>
-        <a href="materials.html" style="display: block; margin-bottom: 20px;">
-            Рекламные материалы
-        </a>
         <a href="collection.html" style="display: block; margin-bottom: 20px;">
             Коллекции
         </a>
@@ -82,6 +124,9 @@
         </a>
         <a href="config2.html" style="display: block; margin-bottom: 20px;">
             Расставьте технику 2
+        </a>
+        <a href="config-logic.html" style="display: block; margin-bottom: 20px;">
+            Расставьте технику (Logic)
         </a>
         <a href="compare.html" style="display: block; margin-bottom: 20px;">
             Сравнение
@@ -101,16 +146,233 @@
         </a>
 
 
-<!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-<!--            Быстрый заказ-->
-<!--        </button>-->
 
+    </div>
+
+    <div class="modal login-modal" id="loginModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3971 17.0538L16.4697 16.9697C16.7359 16.7034 17.1526 16.6792 17.4462 16.8971L17.5303 16.9697L24 23.439L30.4697 16.9697C30.7626 16.6768 31.2374 16.6768 31.5303 16.9697C31.8232 17.2626 31.8232 17.7374 31.5303 18.0303L25.061 24.5L31.5303 30.9697C31.7966 31.2359 31.8208 31.6526 31.6029 31.9462L31.5303 32.0303C31.2641 32.2966 30.8474 32.3208 30.5538 32.1029L30.4697 32.0303L24 25.561L17.5303 32.0303C17.2374 32.3232 16.7626 32.3232 16.4697 32.0303C16.1768 31.7374 16.1768 31.2626 16.4697 30.9697L22.939 24.5L16.4697 18.0303C16.2034 17.7641 16.1792 17.3474 16.3971 17.0538L16.4697 16.9697L16.3971 17.0538Z" fill="#14142B" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text25 bold-text">
+                    Личный кабинет
+                </div>
+                <div class="text14">
+                    Чтобы воспользоваться преимуществами
+                    дилера или партнёра необходимо авторизоваться c логином и паролем
+                </div>
+            </div>
+            <form class="modal__form">
+                <fieldset class="fg _small">
+                    <label>Логин</label>
+                    <input type="text">
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Пароль</label>
+                    <input type="password">
+                    <button type="button" class="pass-toggle"></button>
+                </fieldset>
+                <a href="" class="text14 medium-text accent-text">
+                    Напомнить пароль
+                </a>
+                <button class="modal__btn m-btn m-btn-red">
+                    <span>ВОЙТИ</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal review-modal" id="reviewModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="modal__close _close-modal">
+                <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3971 17.0538L16.4697 16.9697C16.7359 16.7034 17.1526 16.6792 17.4462 16.8971L17.5303 16.9697L24 23.439L30.4697 16.9697C30.7626 16.6768 31.2374 16.6768 31.5303 16.9697C31.8232 17.2626 31.8232 17.7374 31.5303 18.0303L25.061 24.5L31.5303 30.9697C31.7966 31.2359 31.8208 31.6526 31.6029 31.9462L31.5303 32.0303C31.2641 32.2966 30.8474 32.3208 30.5538 32.1029L30.4697 32.0303L24 25.561L17.5303 32.0303C17.2374 32.3232 16.7626 32.3232 16.4697 32.0303C16.1768 31.7374 16.1768 31.2626 16.4697 30.9697L22.939 24.5L16.4697 18.0303C16.2034 17.7641 16.1792 17.3474 16.3971 17.0538L16.4697 16.9697L16.3971 17.0538Z" fill="#14142B" />
+                </svg>
+            </button>
+
+            <div class="modal__top">
+                <div class="text25 bold-text">
+                    Отзыв о товаре
+                </div>
+                <div class="text25">
+                    Духовой шкаф ДА 622-05 БS
+                </div>
+            </div>
+            <form class="review-modal__form">
+                <fieldset class="fg _small">
+                    <label>Дизайн</label>
+                    <div class="reg-group__rating">
+                        <div class="rating-input rating-input2" data-total-rating="0" data-rating-code="1">
+                            <div class="rating-input__item" data-rating-value="5">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="4">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="3">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="2">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="1">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <input class="rating-input__field" type="number" value="0">
+                            <div class="rating-input__text">
+                                <div class="_view0">— не указано</div>
+                                <div class="_view1">— Ужасно</div>
+                                <div class="_view2">— Плохо</div>
+                                <div class="_view3">— Средне</div>
+                                <div class="_view4">— Хорошо</div>
+                                <div class="_view5">— Отлично</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Надежность</label>
+                    <div class="reg-group__rating">
+                        <div class="rating-input rating-input2" data-total-rating="0" data-rating-code="1">
+                            <div class="rating-input__item" data-rating-value="5">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="4">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="3">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="2">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="1">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <input class="rating-input__field" type="number" value="0">
+                            <div class="rating-input__text">
+                                <div class="_view0">— не указано</div>
+                                <div class="_view1">— Ужасно</div>
+                                <div class="_view2">— Плохо</div>
+                                <div class="_view3">— Средне</div>
+                                <div class="_view4">— Хорошо</div>
+                                <div class="_view5">— Отлично</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Функциональность</label>
+                    <div class="reg-group__rating">
+                        <div class="rating-input rating-input2" data-total-rating="0" data-rating-code="1">
+                            <div class="rating-input__item" data-rating-value="5">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="4">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="3">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="2">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <div class="rating-input__item" data-rating-value="1">
+                                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.6832 11.4789L32.8293 12.4148L31.5763 13.4932H31.5807L24.3638 19.7227L24.0582 19.9865L24.1504 20.3796L26.7042 31.2685L17.1374 25.4748L16.7921 25.2656L16.4467 25.4748L6.87988 31.2685L9.43373 20.3796L9.52593 19.9865L9.22029 19.7227L0.754022 12.4148L11.9004 11.4789L12.3028 11.4451L12.4593 11.0728L16.7922 0.761457L21.1244 11.0728L21.2808 11.4451L21.6832 11.4789Z" stroke="#828282" stroke-width="1.33333" />
+                                </svg>
+                            </div>
+                            <input class="rating-input__field" type="number" value="0">
+                            <div class="rating-input__text">
+                                <div class="_view0">— не указано</div>
+                                <div class="_view1">— Ужасно</div>
+                                <div class="_view2">— Плохо</div>
+                                <div class="_view3">— Средне</div>
+                                <div class="_view4">— Хорошо</div>
+                                <div class="_view5">— Отлично</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+                <fieldset class="fg _small">
+                    <label>Рекомендуете данный товар?</label>
+                    <div class="recommend-field">
+                        <div class="recommend-field__wrap">
+                            <div class="recommend-field__item">
+                                <input checked type="radio" name="recommend">
+                                <label>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6997 3.78402C12.65 2.19425 10.614 1.57084 9.6827 2.86026L6.01367 7.94047C5.99195 7.97054 5.97095 8.00103 5.95065 8.03193H3.8737C2.95322 8.03193 2.20703 8.77812 2.20703 9.6986V17.1986C2.20703 18.1191 2.95322 18.8653 3.8737 18.8653H8.03338C8.03571 18.8653 8.03804 18.8653 8.04036 18.8653H14.2391C15.3862 18.8653 16.3862 18.0845 16.6644 16.9716L18.3311 10.3049C18.7256 8.72708 17.5322 7.19861 15.9057 7.19861H12.8064L12.6997 3.78402ZM14.2391 17.1986C14.6215 17.1986 14.9548 16.9384 15.0475 16.5674L16.7142 9.90072C16.8457 9.37477 16.4479 8.86527 15.9057 8.86527H12.8064C11.9062 8.86527 11.1687 8.15043 11.1405 7.25067L11.0338 3.83608L7.3648 8.91629C7.26223 9.0583 7.20703 9.22902 7.20703 9.4042V16.3653C7.20703 16.8242 7.57795 17.1964 8.03633 17.1986L14.2391 17.1986ZM5.54036 9.6986V16.3653C5.54036 16.6575 5.59049 16.938 5.68262 17.1986H3.8737V9.6986H5.54036Z" fill="black" />
+                                    </svg>
+                                    <span>рекомендую</span>
+                                </label>
+                            </div>
+                            <div class="recommend-field__item">
+                                <input type="radio" name="recommend">
+                                <label>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.6997 17.216C12.65 18.8057 10.614 19.4292 9.6827 18.1397L6.01367 13.0595C5.99195 13.0295 5.97095 12.999 5.95065 12.9681H3.8737C2.95322 12.9681 2.20703 12.2219 2.20703 11.3014V3.8014C2.20703 2.88093 2.95322 2.13474 3.8737 2.13474H8.03338C8.03571 2.13473 8.03804 2.13473 8.04036 2.13473H14.2391C15.3862 2.13473 16.3862 2.91547 16.6644 4.02839L18.3311 10.6951C18.7256 12.2729 17.5322 13.8014 15.9057 13.8014H12.8064L12.6997 17.216ZM14.2391 3.80139C14.6215 3.80139 14.9548 4.06164 15.0475 4.43261L16.7142 11.0993C16.8457 11.6252 16.4479 12.1347 15.9057 12.1347H12.8064C11.9062 12.1347 11.1687 12.8496 11.1405 13.7493L11.0338 17.1639L7.3648 12.0837C7.26223 11.9417 7.20703 11.771 7.20703 11.5958V4.63473C7.20703 4.17583 7.57795 3.80357 8.03633 3.8014L14.2391 3.80139ZM5.54036 11.3014V4.63473C5.54036 4.34253 5.59049 4.06205 5.68262 3.8014H3.8737V11.3014H5.54036Z" fill="black" />
+                                    </svg>
+                                    <span>Не рекомендую</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fg _flex-start _small">
+                    <label>Комментарий к оценке</label>
+                    <textarea></textarea>
+                </fieldset>
+                <div class="review-modal__nav">
+                    <button class="review-modal__btn m-btn m-btn-red">
+                        <span>Отправить отзыв</span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
 
     <!--  -->
     <script src="js/libs.min.js"></script>
-<script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 
 </body>
 
